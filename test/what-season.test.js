@@ -76,7 +76,6 @@ describe('What season', () => {
             expect(() => getSeason()).to.not.throw(Error);
             assert.equal(getSeason(), 'Unable to determine the time of year!');
         });
-
         it.optional('some pack of tests', () => {
             assert.equal(getSeason(new Date(2150, 7, 21, 18, 36, 41, 841)), 'summer');
             expect(getSeason(new Date(83, 9, 25, 16, 20, 23, 544))).to.match(/autumn|fall/);
